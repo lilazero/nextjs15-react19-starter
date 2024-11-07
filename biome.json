@@ -1,0 +1,96 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "files": { "ignoreUnknown": false, "ignore": ["*.config.ts"] },
+  "formatter": {
+    "enabled": true,
+    "useEditorconfig": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 120,
+
+    "attributePosition": "multiline",
+    "bracketSpacing": true,
+    "ignore": [
+      "./node_modules",
+      "./.pnp",
+      "**/.pnp.js",
+      "**/.idea/",
+      "./coverage",
+      "./.next/",
+      "./out/",
+      "./build",
+      "**/.DS_Store",
+      "**/*.pem",
+      "**/pnpm-lock.yaml",
+      "**/npm-debug.log*",
+      "**/yarn-debug.log*",
+      "**/yarn-error.log*",
+      "**/.pnpm-debug.log*",
+      "**/.env*.local",
+      "**/.vercel",
+      "**/*.tsbuildinfo",
+      "**/next-env.d.ts"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "quoteStyle": "double",
+      "attributePosition": "multiline",
+      "bracketSpacing": true
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true,
+      "trailingCommas": "none"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "complexity": {
+        "all": true
+      },
+      "correctness": {
+        "all": true,
+        "noUndeclaredVariables": "off"
+      },
+      "performance": {
+        "all": true
+      },
+      "security": {
+        "all": true
+      },
+      "style": {
+        "all": true,
+        "noImplicitBoolean": "info",
+        "noDefaultExport": "off"
+      },
+      "suspicious": {
+        "all": false
+      },
+      "nursery": {
+        "all": true,
+        "useExplicitType": "off",
+        "useComponentExportOnlyModules": "off",
+        "useSortedClasses": "off"
+      }
+    }
+  },
+  "organizeImports": { "enabled": true },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "defaultBranch": "main"
+  }
+}
