@@ -13,6 +13,8 @@ This is a starter template for building a website using Next.js 15 and React 19.
 - **Husky**: A tool for managing Git hooks.
 - **Lint-Staged**: A tool for running linters on staged Git files.
 
+![Nextjs15Starter](https://github.com/user-attachments/assets/652eed46-b045-4b8c-b748-b081cf4d44c4)
+
 ## Getting Started
 
 To get started with this template, follow these steps:
